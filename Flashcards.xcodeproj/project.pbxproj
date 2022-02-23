@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		01D5D8D127C66BBC00AC3F65 /* FlashcardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8D027C66BBC00AC3F65 /* FlashcardsApp.swift */; };
-		01D5D8D327C66BBC00AC3F65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8D227C66BBC00AC3F65 /* ContentView.swift */; };
 		01D5D8D527C66BBD00AC3F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D5D8D427C66BBD00AC3F65 /* Assets.xcassets */; };
 		01D5D8D827C66BBD00AC3F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D5D8D727C66BBD00AC3F65 /* Preview Assets.xcassets */; };
 		01D5D8DA27C66BBD00AC3F65 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8D927C66BBD00AC3F65 /* Persistence.swift */; };
 		01D5D8DD27C66BBD00AC3F65 /* Flashcards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8DB27C66BBD00AC3F65 /* Flashcards.xcdatamodeld */; };
+		01D5D8E627C66C7100AC3F65 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8E527C66C7100AC3F65 /* Consts.swift */; };
+		01D5D8E827C66D1B00AC3F65 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8E727C66D1B00AC3F65 /* QuizView.swift */; };
+		01D5D8EA27C66D8800AC3F65 /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8E927C66D8800AC3F65 /* DeckViewModel.swift */; };
+		01D5D8EC27C66DAF00AC3F65 /* DeckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5D8EB27C66DAF00AC3F65 /* DeckModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01D5D8CD27C66BBC00AC3F65 /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D5D8D027C66BBC00AC3F65 /* FlashcardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsApp.swift; sourceTree = "<group>"; };
-		01D5D8D227C66BBC00AC3F65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01D5D8D427C66BBD00AC3F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D5D8D727C66BBD00AC3F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01D5D8D927C66BBD00AC3F65 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		01D5D8DC27C66BBD00AC3F65 /* Flashcards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flashcards.xcdatamodel; sourceTree = "<group>"; };
+		01D5D8E527C66C7100AC3F65 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		01D5D8E727C66D1B00AC3F65 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		01D5D8E927C66D8800AC3F65 /* DeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewModel.swift; sourceTree = "<group>"; };
+		01D5D8EB27C66DAF00AC3F65 /* DeckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				01D5D8D027C66BBC00AC3F65 /* FlashcardsApp.swift */,
-				01D5D8D227C66BBC00AC3F65 /* ContentView.swift */,
+				01D5D8E727C66D1B00AC3F65 /* QuizView.swift */,
+				01D5D8E927C66D8800AC3F65 /* DeckViewModel.swift */,
+				01D5D8EB27C66DAF00AC3F65 /* DeckModel.swift */,
+				01D5D8E527C66C7100AC3F65 /* Consts.swift */,
 				01D5D8D427C66BBD00AC3F65 /* Assets.xcassets */,
 				01D5D8D927C66BBD00AC3F65 /* Persistence.swift */,
 				01D5D8DB27C66BBD00AC3F65 /* Flashcards.xcdatamodeld */,
@@ -144,7 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D5D8DA27C66BBD00AC3F65 /* Persistence.swift in Sources */,
-				01D5D8D327C66BBC00AC3F65 /* ContentView.swift in Sources */,
+				01D5D8EC27C66DAF00AC3F65 /* DeckModel.swift in Sources */,
+				01D5D8E627C66C7100AC3F65 /* Consts.swift in Sources */,
+				01D5D8E827C66D1B00AC3F65 /* QuizView.swift in Sources */,
+				01D5D8EA27C66D8800AC3F65 /* DeckViewModel.swift in Sources */,
 				01D5D8DD27C66BBD00AC3F65 /* Flashcards.xcdatamodeld in Sources */,
 				01D5D8D127C66BBC00AC3F65 /* FlashcardsApp.swift in Sources */,
 			);

@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct FlashcardsApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject var deckViewModel = DeckViewModel()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuizView()
+                .environmentObject(deckViewModel)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
