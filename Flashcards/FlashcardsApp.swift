@@ -9,14 +9,14 @@ import SwiftUI
 
 @main
 struct FlashcardsApp: App {
-    let persistenceController = PersistenceController.shared
-    @StateObject var deckViewModel = DeckViewModel()
+//    let deckOfCardsViewModel = DeckOfCardsViewModel()
+    @StateObject var deckOfCardsViewModel = DeckOfCardsViewModel()
 
     var body: some Scene {
         WindowGroup {
             QuizView()
-                .environmentObject(deckViewModel)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(deckOfCardsViewModel)
+                .environment(\.managedObjectContext, deckOfCardsViewModel.container.viewContext)
         }
     }
 }
